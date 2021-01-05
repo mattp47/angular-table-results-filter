@@ -1,0 +1,132 @@
+/* Add application styles & imports to this file! */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css";
+@import "~font-awesome/css/font-awesome.css";
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/OpenSans-Regular.ttf') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/OpenSans-Italic.ttf') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('fonts/OpenSans-Bold.ttf') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	font-family: "OpenSans",Helvetica,Arial,sans-serif;
+}
+
+.container-padding {
+	padding: 20px 40px;
+}
+
+.zero-top-margin {
+	margin-top: 0;
+}
+
+.table th {
+	text-align: left;
+}
+
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+	padding: 3px 15px;
+	line-height: 1.5385;
+	border-top: 1px solid #ddd;
+	font-size: 13px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #F4F4F9;
+}
+
+.table-hover>tbody>tr:hover {
+	background-color: #DEE4ED;
+}
+
+.table>thead>tr>th {
+	background: #7692B0;
+	padding: 7px 15px;
+	color: #fff;
+	font-weight: 600;
+	border: 0;
+	vertical-align: bottom;
+	line-height: 1.5385;
+}
+
+.table td {
+	min-width:180px; /* force table to be oversize */
+}
+
+ul {
+	margin-bottom: 0;
+}
+
+.btn-success {
+	color: #fff;
+	background-color: #456990;
+	border-color: #3d5c7f;
+	font-size: 13px;
+}
+
+.btn-success.active, .btn-success:active, .btn-success:hover,
+.open>.btn-success.dropdown-toggle {
+	color: #fff;
+	background-color: #34506e;
+	border-color: #293e55;
+}
+
+.btn-success:focus,
+.btn-success.focus,
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success.active:hover,
+.btn-success:active.focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open>.btn-success.dropdown-toggle.focus,
+.open>.btn-success.dropdown-toggle:focus,
+.open>.btn-success.dropdown-toggle:hover {
+	color: #fff;
+	background-color: #293e55;
+	border-color: #131e29;
+}
+.display-cols .popover {
+	border-radius: 0;
+	margin-left: -55px;
+}
+
+.display-cols .popover-arrow {
+	display:none;
+}
+
+.display-cols .popover.bottom {
+	margin-top:0;
+}
+
+label {
+	font-weight: normal;
+	font-size: 13px;
+	font-family: "OpenSans",Helvetica,Arial,sans-serif;
+}
+
+.checkbox-success input[type=radio]:checked+label::before,
+.checkbox-success input[type=checkbox]:checked+label::before {
+	background-color: #456990;
+	border-color: #456990;
+}
